@@ -2,7 +2,7 @@
 
 Quick reference for the Prepry database structure.
 
-**Last synced with migration:** `20260113194816_add_exam_compositions_and_chapter_mappings.sql`
+**Last synced with migration:** `20260113204531_change_chapters_percentage_to_numeric.sql`
 
 ---
 
@@ -70,7 +70,7 @@ Certification exams
 Exam content chapters with coverage percentages
 - `id` (int, PK)
 - `name` (text)
-- `percentage` (int) - coverage weight
+- `percentage` (numeric) - coverage weight
 - `exam_id` → exams
 - `credentialing_body_id` → credentialing_bodies
 - `chapter_id`, `chapter_uuid` (legacy identifiers)
